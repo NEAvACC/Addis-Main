@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Profile Name="Addis Ababa" FullName="Addis Ababa Eurocat">
+  <Version AIRAC="2408" Revision="a" PublishDate="20240908"
+    UpdateURL="github.com/NEAvACC/Addis-Ababa-Dataset/raw/release/Published" />
+  <Servers>
+    <VATSIMStatus url="https://status.vatsim.net/" />
+    <GRIB url="https://sawbe.com/GRIB/" />
+    <G2G url="antifaff.vatsys.sawbe.com" port="64738" />
+  </Servers>
+</Profile>
