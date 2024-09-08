@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Radars>
-<!-- Primary Radars-->
+  <!-- Primary Radars-->
   <Radar Name="Bole" Type="PRI" Elevation="9976" MaxRange="60">
     <Lat>09.106203</Lat>
     <Long>+038.769919</Long>
@@ -9,16 +9,16 @@
     <Lat>11.550000</Lat>
     <Long>+043.155000</Long>
   </Radar>
-<!-- SSR Radars-->
-    <Radar Name="Bole" Type="SSR_ModeC" Elevation="9976" MaxRange="200">
+  <!-- SSR Radars-->
+  <Radar Name="Bole" Type="SSR_ModeC" Elevation="9976" MaxRange="256">
     <Lat>09.106203</Lat>
     <Long>+038.769919</Long>
   </Radar>
-  <Radar Name="Djibouti" Type="SSR_ModeC" Elevation="49" MaxRange="200">
+  <Radar Name="Djibouti" Type="SSR_ModeC" Elevation="49" MaxRange="256">
     <Lat>11.550000</Lat>
     <Long>+043.155000</Long>
   </Radar>
-<!-- ADSB Radars-->
+  <!-- ADSB Radars-->
   <Radar Name="Gambella" Type="ADSB" Elevation="1790" MaxRange="250">
     <Lat>08.117333</Lat>
     <Long>+034.563333</Long>
@@ -35,10 +35,19 @@
     <Lat>14.146667</Lat>
     <Long>+038.776667</Long>
   </Radar>
-  <!--Ground Radars-->
+  <!--Ground
+  Radars-->
+  <Radar Name="HAAB_SMR" Type="SMR" Elevation="7625" MaxRange="5">
+    <Lat>08.974585</Lat>
+    <Long>+038.797373</Long>
+  </Radar>
   <Radar Name="HAAB_SMR" Type="SMR_ADSB" Elevation="7625" MaxRange="5">
     <Lat>08.974585</Lat>
     <Long>+038.797373</Long>
+  </Radar>
+  <Radar Name="HDAM_SMR" Type="SMR" Elevation="49" MaxRange="5">
+    <Lat>11.543753</Lat>
+    <Long>+043.158390</Long>
   </Radar>
   <Radar Name="HDAM_SMR" Type="SMR_ADSB" Elevation="49" MaxRange="5">
     <Lat>11.543753</Lat>
@@ -48,7 +57,15 @@
     <Lat>09.624185</Lat>
     <Long>+041.855614</Long>
   </Radar>
+  <Radar Name="HADR_SMR" Type="SMR_ADSB" Elevation="3792" MaxRange="5">
+    <Lat>09.624185</Lat>
+    <Long>+041.855614</Long>
+  </Radar>
   <Radar Name="HABD_SMR" Type="SMR" Elevation="6023" MaxRange="5">
+    <Lat>11.607244</Lat>
+    <Long>+037.318811</Long>
+  </Radar>
+  <Radar Name="HABD_SMR" Type="SMR_ADSB" Elevation="6023" MaxRange="5">
     <Lat>11.607244</Lat>
     <Long>+037.318811</Long>
   </Radar>
@@ -56,7 +73,15 @@
     <Lat>14.146323</Lat>
     <Long>+038.771748</Long>
   </Radar>
+  <Radar Name="HAAX_SMR" Type="SMR_ADSB" Elevation="6960" MaxRange="5">
+    <Lat>14.146323</Lat>
+    <Long>+038.771748</Long>
+  </Radar>
   <Radar Name="HAGN_SMR" Type="SMR" Elevation="6545" MaxRange="5">
+    <Lat>12.517348</Lat>
+    <Long>+037.435628</Long>
+  </Radar>
+  <Radar Name="HAGN_SMR" Type="SMR_ADSB" Elevation="6545" MaxRange="5">
     <Lat>12.517348</Lat>
     <Long>+037.435628</Long>
   </Radar>
@@ -64,37 +89,8 @@
     <Lat>06.039021</Lat>
     <Long>+037.591513</Long>
   </Radar>
-<!--Neighboring FIR Radars-->
-<!--HKNA-->
-  <Radar Name="Wajir ADSB" Type="ADSB" Elevation="830" MaxRange="250">
-    <Lat>01.727925</Lat>
-    <Long>+040.089625</Long>
-  </Radar>
-  <Radar Name="Poror ADSB" Type="ADSB" Elevation="8430" MaxRange="250">
-    <Lat>01.236333</Lat>
-    <Long>+036.614750</Long>
-  </Radar>
-<!--HSSS-->
-  <Radar Name="Damazin SSR" Type="SSR_ModeC" Elevation="1198" MaxRange="200">
-    <Lat>11.338222</Lat>
-    <Long>+034.338306</Long>
-  </Radar>
-  <Radar Name="Juba ADSB" Type="ADSB" Elevation="1511" Maxrange="250">
-    <Lat>04.872000</Lat>
-    <Long>+031.601167</Long>
-  </Radar>
-<!--HHAA-->
-  <Radar Name="Asmara SSR" Type="SSR_ModeC" Elevation="7661" MaxRange="200">
-    <Lat>15.286389</Lat>
-    <Long>+038.900000</Long>
-  </Radar>
-  <Radar Name="Assab ADSB" Type="ADSB" Elevation="46" MaxRange="250">
-    <Lat>13.066667</Lat>
-    <Long>+042.633333</Long>
-  </Radar>
-<!--HCSM-->
-  <Radar Name="Mogadishu ADSB" Type="ADSB" Elevation="31" MaxRange="250">
-    <Lat>02.019535</Lat>
-    <Long>+045.303465</Long>
+  <Radar Name="HAAM_SMR" Type="SMR_ADSB" Elevation="3895" MaxRange="5">
+    <Lat>06.039021</Lat>
+    <Long>+037.591513</Long>
   </Radar>
 </Radars>

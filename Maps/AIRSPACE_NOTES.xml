@@ -1,0 +1,25 @@
+<Maps>
+    <Map Type="System2" Name="AIRSPACE_NOTES" Priority="1" CustomColourName="Mustard">
+        <Label HasLeader="False" Alignment="Center" VerticalAlignment="Middle">
+            <Point Name="HA R1 SFC-FL290">+08.544545+039.424984</Point>
+            <Point Name="HA R2 SFC-FL290">+07.798609+039.593166</Point>
+            <Point Name="HA R3 SFC-FL310">+10.821317+035.524929</Point>
+            <Point Name="HA P1 SFC-9999">+11.153742+035.132923</Point>
+            <Point Name="HD P1 SFC-1800 AGL">+11.597136+043.062507</Point>
+            <Point Name="HD D12 SFC-3000 AGL">+11.525273+042.106460</Point>
+            <Point Name="HD D11 SFC-3000 AGL">+11.074736+042.363030</Point>
+            <Point Name="HD D9 SFC-5000 AGL">+11.126926+042.697336</Point>
+            <Point Name="HD D9 SFC-3000 AGL">+11.267277+042.932288</Point>
+            <Point Name="HD D8 SFC-4000 AGL">+11.442781+042.774528</Point>
+            <Point Name="HD D1 SFC-FL240">+11.499201+042.756078</Point>
+            <Point Name="HD D5 SFC-2700 AGL">+11.570068+042.821501</Point>
+            <Point Name="HD D13 SFC-3000 AGL">+11.808920+042.873156</Point>
+            <Point Name="HD D14 SFC-3000 AGL">+11.965297+043.266555</Point>
+            <Point Name="HD R4 SFC-FL200">+12.015970+043.395226</Point>
+            <Point Name="HD D15 SFC-FL240">+11.607200+043.760429</Point>
+            <Point Name="HD R7 SFC-FL240">+12.162925+043.401036</Point>
+            <Point Name="HD D16 SFC-3000 AGL">+12.235603+043.397961</Point>
+        </Label>
+    </Map>
+</Maps>
+  

@@ -1,250 +1,734 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Positions>
-  <Position Name="Addis Bandbox" Type="ASD" DefaultCenter="+08.975042+038.799400" DefaultRange="1500" VisibilityRange="500">
-    <Sectors>
-      <Sector Name="ACW"/>
-      <Sector Name="ACE"/>
-      <Sector Name="ABA"/>
-      <Sector Name="BDA"/>
-      <Sector Name="DAMA"/>
-      <Sector Name="DRA"/>
-      <Sector Name="MKA"/>
-    </Sectors>
-    <ManualVisibility>
-        <Point>+11.978042+038.983478</Point>
-        <Point>+05.709266+036.259884</Point>
-        <Point>+07.916295+044.533680</Point>
-    </ManualVisibility>
-    <Maps>
-      <Map Name="ALL_NAVAIDS"/>
-      <Map Name="ALL_CTA"/>
-      <Map Name="ALL_COAST"/>
-      <Map Name="ALL_ROUTE_HIGH"/>
-    </Maps>
-    <ATIS>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Positions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <!--ACC
+  Positions-->
+
+  <Group Name="Enroute">
+
+    <Position Name="Addis Control (Bandbox)" Type="ASD" DefaultCenter="+09.376140+040.340656"
+      DefaultRange="1800" VisibilityRange="300">
+      <Sectors>
+        <Sector Name="ADDW" />
+        <Sector Name="ADDE" />
+        <Sector Name="ADDA" />
+        <Sector Name="BJRA" />
+        <Sector Name="JIBA" />
+        <Sector Name="DIRA" />
+        <Sector Name="MQXA" />
+      </Sectors>
+      <ManualVisibility>
+        <Point>+06.963230+043.825615</Point>
+        <Point>+06.281550+040.023862</Point>
+        <Point>+12.483692+038.530301</Point>
+        <Point>+07.109506+036.472844</Point>
+      </ManualVisibility>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <ATIS>
         <Editor Airport="HAAB" Frequency="128.8" />
         <Window Airport="HAAB" />
-        <Window Airport="HDAM" />
-      </ATIS>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true"/>
-      <Window Type="State" State="Announced" Visible="true"/>
-      <Window Type="State" State="Preactive" Visible="true"/>
-    </Strips>
-    <ArrivalLists>
-      <Airport Name="HAAB"/>
-      <Airport Name="HDAM"/>
-    </ArrivalLists>
-    <CFL QuickLevel="16000"/>
-    <ControllerInfo>
-      <Line>"Addis Control West"</Line>
-      <Line>Covering Ethiopia and Djibouti when local ATC offline</Line>
-    </ControllerInfo>
-    <ControllerInfo Callsign="HAAA_2_CTR">
-      <Line>"Addis Control East"</Line>
-      <Line>Covering Ethiopia and Djibouti when local ATC offline</Line>
-    </ControllerInfo>
-  </Position>
-  <Group Name="TMA positions">
-  <Position Name="Bole Approach" Type="ASD" DefaultCenter="+08.975042+038.799400" DefaultRange="300" MagneticVariation="2" VisibilityRange="150">
-    <Sectors>
-      <Sector Name="ABA"/>
-    </Sectors>
-    <Maps>
-      <Map Name="ALL_NAVAIDS"/>
-      <Map Name="ALL_CTA"/>
-      <Map Name="ALL_COAST"/>
-      <Map Name="Bole/HAAB_RWY07R"/>
-    </Maps>
-    <ATIS>
-        <Editor Airport="HAAB" Frequency="128.8" />
-        <Window Airport="HAAB" />
-      </ATIS>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true"/>
-      <Window Type="State" State="Announced" Visible="true"/>
-      <Window Type="State" State="Preactive" Visible="true"/>
-    </Strips>
-    <ArrivalLists>
-      <Airport Name="HAAB"/>
-    </ArrivalLists>
-    <CFL QuickLevel="24000"/>
-      <AdditionalLevels>8800</AdditionalLevels>
-      <AdditionalLevels>9300</AdditionalLevels>
-      <AdditionalLevels>9800</AdditionalLevels>
-      <AdditionalLevels>12300</AdditionalLevels>
-    <ControllerInfo>
-      <Line>"Bole Approach"</Line>
-      <Line>Monitor ATIS on 128.500</Line>
-    </ControllerInfo>
-  </Position>
-  <Position Name="Bahir Dar Approach" Type="ASD" DefaultCenter="+11.606294+037.319728" DefaultRange="300" VisibilityRange="100">
-    <Sectors>
-      <Sector Name="BDA"/>
-    </Sectors>
-    <Maps>
-      <Map Name="ALL_NAVAIDS"/>
-      <Map Name="ALL_CTA"/>
-      <Map Name="ALL_COAST"/>
-    </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true"/>
-      <Window Type="State" State="Announced" Visible="true"/>
-      <Window Type="State" State="Preactive" Visible="true"/>
-    </Strips>
-    <ArrivalLists>
-      <Airport Name="HABD"/>
-    </ArrivalLists>
-    <CFL QuickLevel="24000"/>
-    <ControllerInfo>
-      <Line>"Bahir Dar Approach"</Line>
-      <Line>Monitor ATIS on 128.500</Line>
-    </ControllerInfo>
-  </Position>
-  <Position Name="Djibouti Approach" Type="ASD" DefaultCenter="+11.547222+043.159444" DefaultRange="300" VisibilityRange="100">
-    <Sectors>
-      <Sector Name="DAMA"/>
-    </Sectors>
-    <Maps>
-      <Map Name="ALL_NAVAIDS"/>
-      <Map Name="ALL_CTA"/>
-      <Map Name="ALL_COAST"/>
-    </Maps>
-    <ATIS>
         <Editor Airport="HDAM" Frequency="126.4" />
         <Window Airport="HDAM" />
       </ATIS>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true"/>
-      <Window Type="State" State="Announced" Visible="true"/>
-      <Window Type="State" State="Preactive" Visible="true"/>
-    </Strips>
-    <ArrivalLists>
-      <Airport Name="HABD"/>
-    </ArrivalLists>
-    <CFL QuickLevel="24000"/>
-    <ControllerInfo>
-      <Line>"Djibouti Approach"</Line>
-      <Line>Monitor ATIS on 126.400</Line>
-    </ControllerInfo>
-  </Position>
+      <Strips Mode="State" Sort="Time">
+        <Window Type="State" State="Jurisdiction" Visible="true" />
+        <Window Type="State" State="Announced" Visible="true" />
+        <Window Type="State" State="Preactive" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAAB" />
+        <Airport Name="HDAM" />
+      </ArrivalLists>
+      <ControllerInfo>
+        <Line>"Addis Control" | CPDLC [HAAA] AVIL FOR FANS 1/A EQUIP ACFT FL245+</Line>
+        <Line>Covering Ethiopia and Djibouti when local ATC offline</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+    <Position Name="Addis East Control" Type="ASD" DefaultCenter="+09.605416+041.858808"
+      DefaultRange="1500" VisibilityRange="300">
+      <Sectors>
+        <Sector Name="ADDE" />
+        <Sector Name="JIBA" />
+        <Sector Name="DIRA" />
+        <Sector Name="MQXA" />
+      </Sectors>
+      <ManualVisibility>
+        <Point>+06.963230+043.825615</Point>
+        <Point>+06.281550+040.023862</Point>
+        <Point>+12.483692+038.530301</Point>
+      </ManualVisibility>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <ATIS>
+        <Editor Airport="HDAM" Frequency="126.4" />
+        <Window Airport="HDAM" />
+      </ATIS>
+      <Strips Mode="State" Sort="Time">
+        <Window Type="State" State="Jurisdiction" Visible="true" />
+        <Window Type="State" State="Announced" Visible="true" />
+        <Window Type="State" State="Preactive" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HDAM" />
+      </ArrivalLists>
+      <ControllerInfo>
+        <Line>"Addis East Control" | CPDLC [HAAE] AVIL FOR FANS 1/A EQUIP ACFT FL245+</Line>
+        <Line>Covering East Ethiopia and Djibouti when local ATC offline</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
   </Group>
-  <Group Name="Tower positions">
-  <Position Name="Bole Tower" Type="ASD" DefaultCenter="+08.975042+038.799400" DefaultRange="100" VisibilityRange="50">
-    <Sectors>
-      <Sector Name="AB ADC"/>
-      <Sector Name="AB SMC"/>
-    </Sectors>
-    <Maps>
-    <ATIS>
+
+  <Group Name="Approach">
+
+    <Position Name="Bole Approach" Type="ASD" DefaultCenter="+08.975042+038.799400"
+      DefaultRange="300" MagneticVariation="2" VisibilityRange="200">
+      <Sectors>
+        <Sector Name="ADDA" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <ATIS>
         <Editor Airport="HAAB" Frequency="128.8" />
         <Window Airport="HAAB" />
       </ATIS>
-      <Map Name="ALL_NAVAIDS"/>
-    </Maps>
-    <Strips Mode="Beacon" Sort="Alpha">
-      <Window Type="ADEP" Beacon="HAAB" Visible="true"/>
-    </Strips>
-    <ArrivalLists>
-      <Airport Name="HAAB"/>
-    </ArrivalLists>
-    <CFL QuickLevel="24000"/>
-    <ControllerInfo>
-      <Line>"Bole Tower"</Line>
-      <Line>Monitor ATIS on 128.500</Line>
-    </ControllerInfo>
+      <Strips Mode="State" Sort="Time">
+        <Window Type="State" State="Jurisdiction" Visible="true" />
+        <Window Type="State" State="Announced" Visible="true" />
+        <Window Type="State" State="Preactive" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAAB" />
+      </ArrivalLists>
+      <ControllerInfo>
+        <Line>"Bole Approach"</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+    <Position Name="Bahir Dar Approach" Type="ASD" DefaultCenter="+11.606294+037.319728"
+      DefaultRange="300" VisibilityRange="150">
+      <Sectors>
+        <Sector Name="BJRA" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="State" Sort="Time">
+        <Window Type="State" State="Jurisdiction" Visible="true" />
+        <Window Type="State" State="Announced" Visible="true" />
+        <Window Type="State" State="Preactive" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HABD" />
+      </ArrivalLists>
+      <ControllerInfo>
+        <Line>"Bahir Dar Approach"</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+    <Position Name="Djibouti Approach" Type="ASD" DefaultCenter="+11.547222+043.159444"
+      DefaultRange="300" VisibilityRange="150">
+      <Sectors>
+        <Sector Name="JIBA" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <ATIS>
+        <Editor Airport="HDAM" Frequency="126.4" />
+        <Window Airport="HDAM" />
+      </ATIS>
+      <Strips Mode="State" Sort="Time">
+        <Window Type="State" State="Jurisdiction" Visible="true" />
+        <Window Type="State" State="Announced" Visible="true" />
+        <Window Type="State" State="Preactive" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HDAM" />
+      </ArrivalLists>
+      <ControllerInfo>
+        <Line>"Djibouti Approach"</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+    <Position Name="Dire Dawa Approach" Type="ASD" DefaultCenter="+09.637786+041.848886"
+      DefaultRange="300" VisibilityRange="150">
+      <Sectors>
+        <Sector Name="DIRA" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="State" Sort="Time">
+        <Window Type="State" State="Jurisdiction" Visible="true" />
+        <Window Type="State" State="Announced" Visible="true" />
+        <Window Type="State" State="Preactive" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HADR" />
+      </ArrivalLists>
+      <ControllerInfo>
+        <Line>"Dire Dawa Approach"</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+    <Position Name="Mekele Approach" Type="ASD" DefaultCenter="+13.473322+039.518211"
+      DefaultRange="300" VisibilityRange="150">
+      <Sectors>
+        <Sector Name="MQXA" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="State" Sort="Time">
+        <Window Type="State" State="Jurisdiction" Visible="true" />
+        <Window Type="State" State="Announced" Visible="true" />
+        <Window Type="State" State="Preactive" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAMK" />
+      </ArrivalLists>
+      <ControllerInfo>
+        <Line>"Mekele Approach"</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+  </Group>
+
+  <Group Name="Control Tower">
+    <Position Name="Bole" Type="ASD" DefaultCenter="+08.975042+038.799400" DefaultRange="100"
+      VisibilityRange="50">
+      <Sectors>
+        <Sector Name="ADDT" />
+        <Sector Name="ADDG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HAAB" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAAB" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HAAB_TWR">
+        <Line>"Bole Tower"</Line>
+        <Line>Monitor ATIS on 128.500</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
     <ControllerInfo Callsign="HAAB_GND">
       <Line>"Bole Ground"</Line>
       <Line>Monitor ATIS on 128.500</Line>
+      <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+      <Line>Charts: https://vats.im/NEAcharts</Line>
+      <Line>Feedback: https://vats.im/nea-feedback</Line>
     </ControllerInfo>
-  </Position>
-  <Position Name="Axum Tower" Type="ASD" DefaultCenter="+14.137069+038.776056" DefaultRange="100" VisibilityRange="30">
-    <Sectors>
-      <Sector Name="AX ADC"/>
-      <Sector Name="AX SMC"/>
-    </Sectors>
-    <Maps>
-      <Map Name="ALL_NAVAIDS"/>
-    </Maps>
-    <Strips Mode="Beacon" Sort="Alpha">
-      <Window Type="ADEP" Beacon="HAAX" Visible="true"/>
-    </Strips>
-    <ArrivalLists>
-      <Airport Name="HAAX"/>
-    </ArrivalLists>
-    <CFL QuickLevel="24000"/>
-    <ControllerInfo>
-      <Line>"Axum Tower"</Line>
-      <Line>Monitor ATIS on 128.500</Line>
-    </ControllerInfo>
-    <ControllerInfo Callsign="HAAX_GND">
-      <Line>"Axum Ground"</Line>
-      <Line>Monitor ATIS on 128.500</Line>
-    </ControllerInfo>
-  </Position>
-  <Position Name="Bahir Dar Tower" Type="ASD" DefaultCenter="+11.606294+037.319728" DefaultRange="150" VisibilityRange="50">
-    <Sectors>
-      <Sector Name="BD ADC"/>
-      <Sector Name="BD SMC"/>
-    </Sectors>
-    <Maps>
-      <Map Name="ALL_NAVAIDS"/>
-    </Maps>
-    <Strips Mode="Beacon" Sort="Alpha">
-      <Window Type="ADEP" Beacon="HABD" Visible="true"/>
-    </Strips>
-    <ArrivalLists>
-      <Airport Name="HABD"/>
-    </ArrivalLists>
-    <CFL QuickLevel="24000"/>
-    <ControllerInfo>
-      <Line>"Bahir Dar Tower"</Line>
-      <Line>Monitor ATIS on 128.500</Line>
-    </ControllerInfo>
-  </Position>
-  <Position Name="Djibouti Tower" Type="ASD" DefaultCenter="+11.547222+043.159444" DefaultRange="100" VisibilityRange="50">
-    <Sectors>
-      <Sector Name="DAM ADC"/>
-      <Sector Name="DAM SMC"/>
-    </Sectors>
-    <Maps>
-      <Map Name="ALL_NAVAIDS"/>
-    </Maps>
-    <ATIS>
-        <Editor Airport="HDAM" Frequency="126.4" />
-        <Window Airport="HDAM" />
-      </ATIS>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true"/>
-      <Window Type="State" State="Announced" Visible="true"/>
-      <Window Type="State" State="Preactive" Visible="true"/>
-    </Strips>
-    <ArrivalLists>
-      <Airport Name="HABD"/>
-    </ArrivalLists>
-    <CFL QuickLevel="24000"/>
-    <ControllerInfo>
-      <Line>"Djibouti Tower"</Line>
-      <Line>Monitor ATIS on 126.400</Line>
-    </ControllerInfo>
-    <ControllerInfo Callsign="HDAM_GND">
-      <Line>"Djibouti Ground"</Line>
-      <Line>Monitor ATIS on 126.400</Line>
-    </ControllerInfo>
-  </Position>
+
+
+    <Position Name="Bahir Dar" Type="ASD" DefaultCenter="+11.606294+037.319728" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="BJRT" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HABD" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HABD" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HABD_TWR">
+        <Line>"Bahir Dar Tower"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+
+
+    <Position Name="Dire Dawa" Type="ASD" DefaultCenter="+09.622833+041.858676" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="DIRT" />
+        <Sector Name="DIRG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HADR" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HADR" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HADR_TWR">
+        <Line>"Dire Dawa Tower"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+      <ControllerInfo Callsign="HADR_GND">
+        <Line>"Dire Dawa Ground"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+
+
+    <Position Name="Gambela" Type="ASD" DefaultCenter="+08.128267+034.563072" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="GMBT" />
+        <Sector Name="GMBG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HAGM" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAGM" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HAGM_TWR">
+        <Line>"Gambela Tower"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+      <ControllerInfo Callsign="HAGM_GND">
+        <Line>"Gambela Ground"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+
+
+    <Position Name="Gonder" Type="ASD" DefaultCenter="+12.521402+037.434952" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="GDQT" />
+        <Sector Name="GDQG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HAGN" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAGN" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HAGN_TWR">
+        <Line>"Gonder Tower"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+      <ControllerInfo Callsign="HAGN_GND">
+        <Line>"Gonder Ground"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+
+
+    <Position Name="Gode" Type="ASD" DefaultCenter="+05.931939+043.578705" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="GDET" />
+        <Sector Name="GDEG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HAGO" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAGO" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HAGO_TWR">
+        <Line>"Gode Tower"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+      <ControllerInfo Callsign="HAGO_GND">
+        <Line>"Gode Ground"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+
+
+    <Position Name="Jijga" Type="ASD" DefaultCenter="+09.350128+042.787961" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="JIJT" />
+        <Sector Name="JJIG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HAJJ" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAJJ" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HAJJ_TWR">
+        <Line>"Jijga Tower"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+      <ControllerInfo Callsign="HAJJ_GND">
+        <Line>"Jijga Ground"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+
+
+    <Position Name="Mekele" Type="ASD" DefaultCenter="+13.467333+039.533500" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="MQXT" />
+        <Sector Name="MQXG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HAMK" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAMK" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HAMK_TWR">
+        <Line>"Mekele Tower"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+      <ControllerInfo Callsign="HAMK_GND">
+        <Line>"Mekele Ground"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+
+    <Position Name="Axum" Type="ASD" DefaultCenter="+14.146764+038.772833" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="AUXT" />
+        <Sector Name="AUXG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HAAX" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HAAX" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HAAX_TWR">
+        <Line>"Axum Tower"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+      <ControllerInfo Callsign="HAAX_GND">
+        <Line>"Axum Ground"</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
+
+    <Position Name="Djibouti" Type="ASD" DefaultCenter="+11.547189+043.159061" DefaultRange="100"
+      VisibilityRange="30">
+      <Sectors>
+        <Sector Name="JIBG" />
+        <Sector Name="JIBG" />
+      </Sectors>
+      <Maps>
+        <Map Name="ALL_NAVAIDS" />
+        <Map Name="ALL_NAVAIDS_NAMES" />
+        <Map Name="COAST" />
+        <Map Name="FIR_BDRY" />
+        <Map Name="ALL_TMA" />
+        <Map Name="ALL_CTR" />
+        <Map Name="ALL_ROUTES" />
+        <Map Name="ALL_POINTS" />
+      </Maps>
+      <Strips Mode="Beacon" Sort="Alpha">
+        <Window Type="ADEP" Beacon="HDAM" Visible="true" />
+      </Strips>
+      <ArrivalLists>
+        <Airport Name="HDAM" />
+      </ArrivalLists>
+      <ControllerInfo Callsign="HDAM_TWR">
+        <Line>"Djibouti Tower"</Line>
+        <Line>Monitor ATIS on 126.400</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+      <ControllerInfo Callsign="HDAM_GND">
+        <Line>"Djibouti Ground"</Line>
+        <Line>Monitor ATIS on 126.400</Line>
+        <Line>Report Callsign, Aircraft Type and Position on Initial Contact</Line>
+        <Line>Charts: https://vats.im/NEAcharts</Line>
+        <Line>Feedback: https://vats.im/nea-feedback</Line>
+      </ControllerInfo>
+    </Position>
   </Group>
-  <Position Name="HAAB" Type="ASMGCS" ASMGCSAirport="HAAB" DefaultCenter="+08.979260+038.798987" DefaultRange="3" Rotation="016">
+
+
+  <Position Name="HAAB" Type="ASMGCS" ASMGCSAirport="HAAB" DefaultCenter="+08.979260+038.798987"
+    DefaultRange="3" Rotation="016">
     <Maps>
-      <Map Name="Bole/HAAB_RWYS"/>
-      <Map Name="Bole/HAAB_TWYS"/>
-      <Map Name="Bole/HAAB_BLDS"/>
+      <Map Name="Bole/HAAB_RWYS" />
+      <Map Name="Bole/HAAB_TWYS" />
+      <Map Name="Bole/HAAB_BLDS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
     </Maps>
   </Position>
-  <Position Name="HDAM" Type="ASMGCS" ASMGCSAirport="HDAM" DefaultCenter="+11.547222+043.159444" DefaultRange="3" Rotation="359">
+  <Position Name="HDAM" Type="ASMGCS" ASMGCSAirport="HDAM" DefaultCenter="+11.547222+043.159444"
+    DefaultRange="3" Rotation="359">
     <Maps>
-      <Map Name="Djibouti/HDAM_RWYS"/>
-      <Map Name="Djibouti/HDAM_TWYS"/>
-      <Map Name="Djibouti/HDAM_BLDS"/>
+      <Map Name="Djibouti/HDAM_RWYS" />
+      <Map Name="Djibouti/HDAM_TWYS" />
+      <Map Name="Djibouti/HDAM_BLDS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
     </Maps>
   </Position>
+  <Position Name="HAAM" Type="ASMGCS" ASMGCSAirport="HAAM" DefaultCenter="+06.039485+037.590726"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Arba Minch/HAAM_RWYS" />
+      <Map Name="Arba Minch/HAAM_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HAAX" Type="ASMGCS" ASMGCSAirport="HAAX" DefaultCenter="+14.147107+038.773335"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Axum/HAAX_RWYS" />
+      <Map Name="Axum/HAAX_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HABD" Type="ASMGCS" ASMGCSAirport="HABD" DefaultCenter="+11.606298+037.319749"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Bahir Dar/HABD_RWYS" />
+      <Map Name="Bahir Dar/HABD_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HADC" Type="ASMGCS" ASMGCSAirport="HADC" DefaultCenter="+11.110636+039.725937"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Combolcha/HADC_RWYS" />
+      <Map Name="Combolcha/HADC_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HADR" Type="ASMGCS" ASMGCSAirport="HADR" DefaultCenter="+09.622721+041.854150"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Dire Dawa/HADR_RWYS" />
+      <Map Name="Dire Dawa/HADR_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HAGM" Type="ASMGCS" ASMGCSAirport="HAGM" DefaultCenter="+08.128765+034.563839"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Gambella/HAGM_RWYS" />
+      <Map Name="Gambella/HAGM_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HAGN" Type="ASMGCS" ASMGCSAirport="HAGN" DefaultCenter="+12.520158+037.432918"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Gonder/HAGN_RWYS" />
+      <Map Name="Gonder/HAGN_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HAJJ" Type="ASMGCS" ASMGCSAirport="HAJJ" DefaultCenter="+09.330328+042.910850"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Jigjiga/HAJJ_RWYS" />
+      <Map Name="Jigjiga/HAJJ_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+
+  <Position Name="HAJM" Type="ASMGCS" ASMGCSAirport="HAJM" DefaultCenter="+07.661639+036.820222"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Jimma/HAJM_RWYS" />
+      <Map Name="Jimma/HAJM_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HALA" Type="ASMGCS" ASMGCSAirport="HALA" DefaultCenter="+07.100611+038.397006"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Hawassa/HALA_RWYS" />
+      <Map Name="Hawassa/HALA_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+  <Position Name="HAMK" Type="ASMGCS" ASMGCSAirport="HAMK" DefaultCenter="+13.467510+039.533407"
+    DefaultRange="2">
+    <Maps>
+      <Map Name="Mekele/HAMK_RWYS" />
+      <Map Name="Mekele/HAMK_TWYS" />
+      <Map Name="ASMGCS_TAXI_ALL" />
+    </Maps>
+  </Position>
+
+
 </Positions>
