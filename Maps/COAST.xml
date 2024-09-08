@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Maps>
-  <Map Type="System" Name="ALL_COAST" Center="+085837.000+0384800.000" Priority="2">
+  <Map Type="System" Name="COAST" Priority="3">
     <Line>+252213.501+0653036.000/+252431.399+0653153.799</Line>
     <Line>+252431.399+0653153.799/+252213.501+0652956.900</Line>
     <Line>+252213.501+0652956.900/+252310.500+0652223.800</Line>

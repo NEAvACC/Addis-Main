@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Maps>
-    <Map Name="ALL_NAVAIDS" Priority="0" Type="System">
-        <Symbol Type="Hexagon">
+    <Map Name="ALL_NAVAIDS" Priority="2" Type="System">
+        <Symbol Type="HollowSquare">
             <Point>ABI</Point>
             <Point>ADS</Point>
             <Point>ASM</Point>
@@ -31,9 +31,9 @@
             <Point>TN</Point>
         </Symbol>
     </Map>
-    <Map Name="ALL_NAVAIDS_NAMES" Priority="0" Type="System">
-        <Label hasLeader="true">
-        <!-- VORs -->
+    <Map Name="ALL_NAVAIDS_NAMES" Priority="2" Type="System">
+        <Label>
+            <!-- VORs -->
             <Point Name="ABI">ABI</Point>
             <Point Name="ADS">ADS</Point>
             <Point Name="ASM">ASM</Point>
@@ -44,7 +44,7 @@
             <Point Name="GWZ">GWZ</Point>
             <Point Name="MAV">MAV</Point>
             <Point Name="QHA">QHA</Point>
-        <!-- NDBs -->
+            <!-- NDBs -->
             <Point Name="AB">AB</Point>
             <Point Name="AM">AM</Point>
             <Point Name="AS">AS</Point>

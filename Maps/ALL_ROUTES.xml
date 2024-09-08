@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Maps>
-    <Map Name="ALL_ROUTE_HIGH" Priority="0" Type="System">
+    <Map Name="ALL_ROUTES" Priority="1" Type="System">
         <Line Name="A408">BOPSA.A408.OKMAB</Line>
         <Line Name="A451">DEKRA.A451.ASM VOR</Line>
         <Line Name="A727">AVONO.A727.ANTAX</Line>
